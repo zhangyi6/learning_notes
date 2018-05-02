@@ -1,0 +1,12 @@
+set()可以记录没有重复的数据集
+
+--------------2018.5.2-----------------
+i've learned about first chapter of the course called 'data_analysis' 
+from Udacity, done some practice of this course, and generally know 
+the process of data analysis, that is:
+1. observe the frame of the data set, and come up with questions about
+  the data, find the abnormal nouns
+
+2. then correct the abnormal nouns
+
+3. make the data visible(use matplotlib.pyplot)
