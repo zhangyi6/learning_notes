@@ -14,3 +14,16 @@ the process of data analysis, that is:
 goal:
 finish the chapter about 'How to use Numpy and Pandas to analysis ...
 1-dimensional data'
+
+--------------Numpy & Pandas------------
+1. np.array([])
+   pd.Series({})
+
+2. Numpy: mean(), std(), max(), min(), data[1:3]-->operate raw data
+   '+='-->operate raw data, 'a = a + xx'-->create a new array
+
+   Pandas: + describle(), loc[]-->position index, iloc[]-->key index
+          argmax(), dropna()-->remove NaN value, fillna('0')-->
+          replace NaN as '0',
+          special using : s1.add(s2, fill_value=0)-->show all value
+          without NaN
