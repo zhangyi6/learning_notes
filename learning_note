@@ -27,3 +27,18 @@ finish the chapter about 'How to use Numpy and Pandas to analysis ...
           replace NaN as '0',
           special using : s1.add(s2, fill_value=0)-->show all value
           without NaN
+-------------Numpy & Pandas(2-dimension)------
+1. i could use DataFrame to deal with csv file
+
+2. df.applymap(Func)-->for all value
+   df.apply(Func) -->for all column
+   DataFrame add Series equal to 'column of DataFrame' add 
+   'each value which match the column-index'
+
+3. df.groupby(['key1', 'key2'], as_index=False) -->key1 and key2
+   will not be use to get it's value ,so use 'as_index=False' can 
+   fix this problem
+
+4. df1.merge(df2, on=['key1','key2'], how='left' or 'inner' or 'right')
+   -->'on=' is the keyword which refered to merge
+   -->'how=' is the way to merge
