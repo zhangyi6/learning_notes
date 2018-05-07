@@ -42,3 +42,19 @@ finish the chapter about 'How to use Numpy and Pandas to analysis ...
 4. df1.merge(df2, on=['key1','key2'], how='left' or 'inner' or 'right')
    -->'on=' is the keyword which refered to merge
    -->'how=' is the way to merge
+
+------------Descriptive Statistic--------------
+1. 贝塞尔校正：样本估计总体的标准差时，分子n应该是n-1,因为总体的
+   标准差应该比样本的大；
+
+2. 直方图的组距牺牲了一部分信息，但如果组距无限小，则没有啦形状
+
+3. 任何分布都可以改写成正态分布，x-axis为z=(x-μ)/σ-->改写成
+   距离中心z=0有多少个标准偏差
+
+4. 样本的异常值的判断：Outlier < Q1 - 1.5(IQR) or > Q3 + 1.5(IQR)
+   其中IQR等于Q3，Q1的均值
+
+5. 中心极限定理：反映了样本的标准偏差和总体的标准偏差之间的关系
+   SE = σ/n^(1/2)
+
