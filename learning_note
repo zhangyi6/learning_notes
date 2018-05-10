@@ -57,4 +57,43 @@ finish the chapter about 'How to use Numpy and Pandas to analysis ...
 
 5. 中心极限定理：反映了样本的标准偏差和总体的标准偏差之间的关系
    SE = σ/n^(1/2)
+-----------Formally starting the ML course-------
+General learning about ML
+1. Logistic regresion & SVM & Neutrul network & kernal function
+   --> classify problem solving method
+   Logistic regression divides the sample by linear
+   and the other method by curve
 
+2. SVM has some parameters:
+   * kernal: linear, poly, rbf
+   * degree: int, decide the polynomial's hightest degree 
+   * gramma: need to learn in next course 
+   * C: need to learn in next course 
+
+3. use sklearn to test the performance of model
+   * firstly, we should divide the training data to two parts
+     "from sklearn.cross_validation import train_test_split"
+     "X.train, X.test, y.train, y.test = train_test_split(X, y, test_size)"
+   * then estimate the model
+     - accuracy_score
+     - recall
+     - precision
+     - F1 score
+     - Fβ
+     - ROC: perfect:1, good:0.8, random: 0.5
+     - mean absolute error:
+       from sklean.metrics import mean_absolute_error
+       from sklean.linear_model import LinearRegression
+       classifier = LinearRegression()
+       classifier.fit(X, y)
+       guesses = classifier.predict(X)
+       error = mean_absolute_error(y, guesses)
+     - mean squared error
+       just replace mean_absolute_error by mean_squared_error
+     - R2 score
+       1 - (linear regression) / (mean line)
+       if R2--> 1 : show that the model works well
+          R2--> 0 : to be contrary
+          
+          from sklean.metrics import r2_score
+          r2_score(y_true, y_pred  
