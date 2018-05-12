@@ -97,3 +97,23 @@ General learning about ML
           
           from sklean.metrics import r2_score
           r2_score(y_true, y_pred  
+---------------model selection--------------------
+1. the most important thing is the k-fold cross validation and then grid search
+   'k-fold cross validation'-->divide the data into k piece of sample,
+   take 1 to test and the left to train, every time we shuffle the data, 
+   so that estimate any kind of bias
+   code:
+   from sklearn.model_selection import kFold
+   kf = kFold(12, 3, shuffle=True)
+   for train_indices, test_indices in kf:
+       print...
+   grid search-->
+   from sklearn.model_selection import GridSearchCV
+   grid_obj = GridSearchCV(estimator=clf, 
+                          params_grid=parameter, cv=kFold, scoring=scorer)
+   grid_fit = grid_obj.fit(X_train, y_train)
+   best_clf = grid_fit.best_estimator_
+   best_clf.fit(X_train, y_train)
+
+2. learn how to search the parameter of sklearn
+
