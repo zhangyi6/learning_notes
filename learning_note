@@ -117,3 +117,16 @@ General learning about ML
 
 2. learn how to search the parameter of sklearn
 
+--------------decision tree-----------------------
+1. Entropy = -m/(m+n)*log(m/(m+n)) - n/(m+n)*log(n/(m+n))
+
+2. information gain = Entropy(parents) - 0.5(Entropy(child1) + Entropy(child2))
+   the task is to maximum the information gain
+
+3. random forest : select the node randomly, and all predict y
+
+4. hyperparameters of decision tree:
+   * max_depth
+   * min_sample_leaf
+   * min_sample_split --> the minimun number of sample spliting the inner node 
+   * max_feature
