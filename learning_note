@@ -130,3 +130,14 @@ General learning about ML
    * min_sample_leaf
    * min_sample_split --> the minimun number of sample spliting the inner node 
    * max_feature
+
+--------------the project of decision tree--------
+1. too hard to clean data, but there are still some valuable things i've learn
+   first, string dealing method:
+   * strip() --> delete head and tail position's string(often space)
+   * replace(x1, x2) --> replace x1 to x2 (x1, x2 are both string)
+   * str.maketrans and translate
+   * re.sub(patter, repl, string, count)
+
+2. one thing i should keep digging is regulization, i want to find out 
+   the meaning of 'r', 'b', 'f' etc
