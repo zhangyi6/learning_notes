@@ -141,3 +141,20 @@ General learning about ML
 
 2. one thing i should keep digging is regulization, i want to find out 
    the meaning of 'r', 'b', 'f' etc
+
+--------------SVM && Bagging and Boosting---------
+1. classification error + margin error = ERROR
+2. C hyperparameter: if C is large, then classification is good, but 
+                     margin is small
+                     if C is small, then classification is bad, but 
+                     margin is large
+3. kernel: 'linear', 'poly', 'rbf'
+
+4. AdaBoost: the precess of achiving the AdaBoost
+             * get the best shoot to divide data into two different part
+             * change the weight of correct and incorrect data to the same
+             * find out the other simple classifier and change the weight
+             * repeat n times
+             * calculate each classifier's weight(equel In(correct/incorret))
+             ** get all the indivitual parts and vote by the weight of each part
+             ** positive shows that it is positive
