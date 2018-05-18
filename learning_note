@@ -158,3 +158,34 @@ General learning about ML
              * calculate each classifier's weight(equel In(correct/incorret))
              ** get all the indivitual parts and vote by the weight of each part
              ** positive shows that it is positive
+
+---------------neural network--------------------
+The tons of method to optimize neural network
+1. early-stop: according to the model complixity graph, we should pick
+   the smallest epochs which make test-error lowest to avoid overfitting
+
+2. Regulization: add (L1, L2 regulization method) to error function to 
+   avoid overfitting
+   L1: prefer to get a sparse vector which make some unimportance feature 
+   zero
+   L2: prefer to get a weight vetor with small value for every feature
+
+3. Use dropout layer against overfitting
+
+4. Use other excitation function rather than sigmoid function, for example:
+   tanh(), relu
+
+5. Batch and random gradiant descent:
+   random select some small batch of data to train the model each epochs
+
+6. Learning rate decrease:
+   if steep, long step
+   if plain, small step
+   in case of missing the lowest valley
+
+7. randomly restart: starting from different situation to find the overall
+   lowest valley
+
+8. momentum: when take a step, take this: step(n) + beta*step(n-1) + 
+   beta^2 * step(n-2) ...
+   beside, beta is called momentum
