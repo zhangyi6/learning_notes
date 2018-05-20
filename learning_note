@@ -189,3 +189,6 @@ The tons of method to optimize neural network
 8. momentum: when take a step, take this: step(n) + beta*step(n-1) + 
    beta^2 * step(n-2) ...
    beside, beta is called momentum
+
+----------------deep learning-------------
+1. this is a challenging task to do, so give me one more day,haha```
