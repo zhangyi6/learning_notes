@@ -192,3 +192,13 @@ The tons of method to optimize neural network
 
 ----------------deep learning-------------
 1. this is a challenging task to do, so give me one more day,haha```
+
+----------------deep learning-2-----------
+1. convolutional neural network: convolutional layer: get the pattern of images, usually, it increases
+   the layers's deep
+
+2. pooling layer: get max or average of the convolutional layer, and decrease the dimention
+   and decrease the number of parameters
+
+3. transfer learning: four cases, we make decisions depends on whether the train data is 
+   familar to the original data and the size of train data
